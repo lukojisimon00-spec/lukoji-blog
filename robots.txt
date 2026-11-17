@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://lukojisimon00-spec.github.io/lukoji-blog/sitemap.xml
