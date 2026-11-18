@@ -1,0 +1,117 @@
+<!doctype html>
+<html lang="fr">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Commander · LUKOJI</title>
+<meta name="description" content="Demande ton devis LUKOJI en 2 minutes : affiche, vidéo courte, histoire d&#x27;entrepreneur ou présence en ligne. Réponse sur WhatsApp.">
+<meta property="og:title" content="Commander · LUKOJI"><meta property="og:description" content="Demande ton devis LUKOJI en 2 minutes : affiche, vidéo courte, histoire d&#x27;entrepreneur ou présence en ligne. Réponse sur WhatsApp.">
+<meta property="og:site_name" content="LUKOJI"><meta property="og:locale" content="fr_FR"><link rel="canonical" href="https://lukojisimon00-spec.github.io/lukoji-blog/commander.html"><meta property="og:url" content="https://lukojisimon00-spec.github.io/lukoji-blog/commander.html">
+<link rel="icon" href="symbole.svg" type="image/svg+xml">
+<link rel="alternate" type="application/rss+xml" title="LUKOJI" href="flux.xml">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..900&family=IBM+Plex+Mono:wght@500&display=swap">
+<link rel="stylesheet" href="style.css">
+<script>document.documentElement.classList.add("js")</script>
+<script src="site.js" defer></script>
+</head>
+<body>
+<header class="bandeau">
+ <div class="enveloppe">
+  <a class="logo" href="index.html" aria-label="LUKOJI, accueil"><svg viewBox="0 0 320 670" fill="none" aria-hidden="true"><path d="M28 142 C 70 125, 110 108, 140 88 C 165 70, 190 45, 210 18 L 290 230 C 250 233, 210 236, 180 233 C 140 230, 100 218, 75 217 C 50 216, 40 235, 42 260 C 48 330, 52 420, 50 520 C 49 580, 47 620, 47 650" stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/></svg><b>LUKOJI</b></a>
+  <nav class="rubriques" aria-label="Rubriques">
+   <a href="index.html">Actualités</a><a href="services.html">Services</a><a href="commander.html">Commander</a><a href="a-propos.html">À propos</a><a href="contact.html">Contact</a>
+  </nav>
+ </div>
+ <div class="slogan-bande"><div class="enveloppe">INNOVER · CRÉER · IMPACTER</div></div>
+</header>
+<main class="page-large"><section class="une-noire services-une">
+ <div class="enveloppe une-contenu">
+  <span class="etiquette">Commander</span>
+  <h1 class="titre-une">Rends ton entreprise <span class="accent">visible</span></h1>
+  <span class="barre"></span>
+  <p class="chapo">Une affiche, une vidéo, ton histoire racontée : dis-nous ce que tu veux, on te répond avec un devis sur WhatsApp.</p>
+  <div class="actions"><a class="lire plein" href="#commande">Remplir ma demande</a><a class="lire" href="services.html">Voir les prix</a></div>
+ </div>
+</section>
+
+<section class="enveloppe bloc">
+ <p class="intro-bloc">Tu veux que ton entreprise soit vue ? Remplis ce petit formulaire : il prépare ton message, tu l'envoies sur WhatsApp, et on te répond avec un devis.</p>
+ <ol class="etapes-commande">
+  <li><span class="num">01</span><div><h3>Ta demande</h3><p>Tu remplis le formulaire ci-dessous. Ça prend 2 minutes.</p></div></li>
+  <li><span class="num">02</span><div><h3>Ton devis</h3><p>On te répond sur WhatsApp avec le prix exact, le délai et les numéros de paiement.</p></div></li>
+  <li><span class="num">03</span><div><h3>L'acompte</h3><p>Tu verses 50 % par M-Pesa. On commence le travail.</p></div></li>
+  <li><span class="num">04</span><div><h3>La livraison</h3><p>Tu reçois ton travail, tu demandes tes corrections (2 séries incluses), puis tu paies le reste.</p></div></li>
+ </ol>
+</section>
+
+<section class="enveloppe bloc">
+ <div class="section-titre"><h2>Ta demande</h2></div>
+ <form class="formulaire" id="commande" novalidate>
+  <label>Ton nom <input name="nom" required autocomplete="name"></label>
+  <label>Ton entreprise ou ton activité <input name="entreprise" required placeholder="Ex. : boulangerie, agence de voyage, startup…"></label>
+  <label>Ta ville <input name="ville" placeholder="Ex. : Kinshasa, Lubumbashi, Goma…"></label>
+  <label>Ce que tu veux
+   <select name="service" required>
+    <option value="">Choisis un service</option>
+    <option>Affiche (15 $)</option>
+    <option>Vidéo courte (30 $)</option>
+    <option>Relais d'événement (25 $)</option>
+    <option>Article sponsorisé (60 $)</option>
+    <option>Ton histoire d'entrepreneur (150 $)</option>
+    <option>Bannière sur le blog</option>
+    <option>Présence en ligne (250 $ / mois)</option>
+    <option>Pack Démarrage (69 $)</option>
+    <option>Pack Visibilité (189 $)</option>
+    <option>Pack Marque personnelle (210 $)</option>
+    <option>Je ne sais pas encore, conseillez-moi</option>
+   </select>
+  </label>
+  <label>Ce que tu veux faire connaître <textarea name="projet" rows="4" placeholder="Ton produit, ton événement, ta promo, ton histoire…"></textarea></label>
+  <label>Pour quand ? <input name="delai" placeholder="Ex. : avant le 1er décembre"></label>
+  <p class="erreur" id="erreur" hidden>Remplis au moins ton nom, ton activité et le service voulu.</p>
+  <div class="actions">
+   <button type="submit" class="bouton-principal">Envoyer sur WhatsApp</button>
+   <a href="#" id="par-email" class="bouton-secondaire">Ou par email</a>
+  </div>
+  <p class="petit">Rien n'est enregistré sur ce site : le formulaire prépare seulement ton message. En l'envoyant, tu acceptes nos <a href="conditions.html">conditions</a>.</p>
+ </form>
+</section>
+
+<script>
+(function () {
+  var f = document.getElementById("commande");
+  if (!f) return;
+  function message() {
+    var d = new FormData(f), l = ["Bonjour LUKOJI, je veux être visible en ligne.", ""];
+    var noms = { nom: "Nom", entreprise: "Activité", ville: "Ville", service: "Service", projet: "Mon projet", delai: "Pour quand" };
+    Object.keys(noms).forEach(function (k) { var v = (d.get(k) || "").trim(); if (v) l.push(noms[k] + " : " + v); });
+    return l.join("\n");
+  }
+  function valide() {
+    var ok = ["nom", "entreprise", "service"].every(function (k) { return (f.elements[k].value || "").trim(); });
+    document.getElementById("erreur").hidden = ok;
+    return ok;
+  }
+  f.addEventListener("submit", function (e) {
+    e.preventDefault();
+    if (!valide()) return;
+    window.open("https://wa.me/243808404026?text=" + encodeURIComponent(message()), "_blank", "noopener");
+  });
+  document.getElementById("par-email").addEventListener("click", function (e) {
+    e.preventDefault();
+    if (!valide()) return;
+    location.href = "mailto:lukojisimon00@gmail.com?subject=" + encodeURIComponent("Demande de devis LUKOJI") + "&body=" + encodeURIComponent(message());
+  });
+})();
+</script></main>
+<footer class="pied">
+ <div class="enveloppe">
+  <div class="marque"><svg viewBox="0 0 320 670" fill="none" aria-hidden="true"><path d="M28 142 C 70 125, 110 108, 140 88 C 165 70, 190 45, 210 18 L 290 230 C 250 233, 210 236, 180 233 C 140 230, 100 218, 75 217 C 50 216, 40 235, 42 260 C 48 330, 52 420, 50 520 C 49 580, 47 620, 47 650" stroke="currentColor" stroke-width="16" stroke-linecap="round" stroke-linejoin="round"/></svg><b>LUKOJI</b><span>Innover · Créer · Impacter</span></div>
+  <div><h4>Suivre LUKOJI</h4><ul><li><a href="https://www.youtube.com/@lukoji-officiel" target="_blank" rel="noopener">YouTube</a></li><li><a href="https://www.facebook.com/share/1EbfkqGwq1/" target="_blank" rel="noopener">Facebook</a></li><li><a href="https://www.instagram.com/lukoji_officiel" target="_blank" rel="noopener">Instagram</a></li><li><a href="https://x.com/lukojisimon00" target="_blank" rel="noopener">X</a></li></ul></div>
+  <div><h4>Le média</h4><ul><li><a href="services.html">Nos services</a></li><li><a href="commander.html">Commander</a></li><li><a href="a-propos.html">À propos</a></li><li><a href="contact.html">Contact</a></li><li><a href="confidentialite.html">Confidentialité</a></li><li><a href="flux.xml">Flux RSS</a></li></ul></div>
+  <div class="bas">© 2026 LUKOJI · MÉDIA ENTREPRENEURIAL · RDC</div>
+ </div>
+</footer>
+</body>
+</html>
