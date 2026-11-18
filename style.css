@@ -233,7 +233,14 @@ figure.photo figcaption { font-size: 10px; letter-spacing: .2em; }
 .fondateur p { color: #BDBDBD; margin: 0 0 12px; }
 .fondateur strong { color: #FFFFFF; }
 
-/* Accueil : « Fondé par Simon » */
+.fondateur.discret { background: transparent; color: var(--encre); border: 1px solid var(--filet-doux); padding: 20px; margin-block: 36px; }
+@media (min-width: 640px) { .fondateur.discret { grid-template-columns: 120px 1fr; } }
+.fondateur.discret img { border-color: var(--filet-doux); border-width: 1px; }
+.fondateur.discret .etiquette { color: var(--gris); }
+.fondateur.discret p { color: var(--gris); margin: 8px 0 0; font-size: 16px; }
+.fondateur.discret strong { color: var(--encre); }
+
+/* Accueil : « Fondé par Simon » (retiré) */
 .signe { display: flex; gap: 22px; align-items: center; text-decoration: none; border-top: 2px solid var(--filet); padding-block: 26px 56px; }
 .signe img { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; border: 3px solid var(--encre); flex: none; }
 .signe > span { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
