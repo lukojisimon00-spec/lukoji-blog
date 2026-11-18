@@ -358,3 +358,26 @@ figure.photo figcaption { font-size: 10px; letter-spacing: .2em; }
 .une-noire .bouton-principal { margin-top: 18px; }
 .formulaire .erreur { margin: 0; color: #FF5A00; font-weight: 700; }
 .formulaire .petit { margin: 0; font-size: 14px; color: var(--gris); }
+
+/* ───── Accueil : la poche des annonces passées ───── */
+.poche { margin: 34px 0 10px; background: var(--carte); border: 2px solid var(--filet); border-radius: 16px; }
+.poche > summary { list-style: none; cursor: pointer; display: flex; justify-content: space-between; align-items: center; gap: 12px; padding: 18px 22px; }
+.poche > summary::-webkit-details-marker { display: none; }
+.poche > summary .t { font: 900 20px/1.1 var(--titre); text-transform: uppercase; }
+.poche > summary::after { content: "+"; font: 900 28px/1 var(--titre); }
+.poche[open] > summary::after { content: "–"; }
+.poche[open] > summary { border-bottom: 1px solid var(--filet-doux); }
+.poche .chercher { display: grid; gap: 6px; padding: 16px 22px 0; }
+.poche .chercher input { font: 400 17px/1.4 var(--texte); color: var(--encre); background: var(--fond); border: 2px solid var(--filet); border-radius: 10px; padding: 10px 14px; }
+.poche .jours { padding: 6px 22px 18px; }
+.poche .jour h3 { margin: 18px 0 6px; }
+.poche ul { list-style: none; margin: 0; padding: 0; }
+.poche li a { display: flex; gap: 14px; padding: 10px 0; border-bottom: 1px solid var(--filet-doux); color: var(--encre); text-decoration: none; }
+.poche li a:hover .t { text-decoration: underline; text-decoration-color: var(--orange); text-decoration-thickness: 3px; }
+.poche .heure { font: 500 12px/1.9 var(--mono); letter-spacing: .15em; color: var(--gris); min-width: 34px; }
+.poche .t { font-weight: 600; }
+.poche .vide { padding: 0 22px 18px; color: var(--gris); }
+
+/* ───── Accueil : la commande, en bas de page ───── */
+.accueil-commande { margin-top: 48px; padding: 8px 0 30px; border-top: 2px solid var(--filet); }
+.accueil-commande .bloc:first-of-type { padding-top: 0; }

@@ -68,3 +68,23 @@
     obs.observe(el);
   });
 })();
+
+/* La poche des annonces passées : recherche dans les titres */
+(function () {
+  var champ = document.querySelector("[data-poche]");
+  if (!champ) return;
+  var poche = champ.closest(".poche");
+  var norm = function (t) { return t.normalize("NFD").replace(/[̀-ͯ]/g, "").toLowerCase(); };
+  champ.addEventListener("input", function () {
+    var q = norm(champ.value.trim()), total = 0;
+    poche.querySelectorAll(".jour").forEach(function (j) {
+      var n = 0;
+      j.querySelectorAll("li").forEach(function (li) {
+        var ok = !q || norm(li.textContent).indexOf(q) >= 0;
+        li.hidden = !ok; if (ok) n++;
+      });
+      j.hidden = n === 0; total += n;
+    });
+    poche.querySelector(".vide").hidden = total > 0;
+  });
+})();
