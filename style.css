@@ -258,6 +258,37 @@ figure.photo figcaption { font-size: 10px; letter-spacing: .2em; }
 .contacts a { font: 900 clamp(22px, 3.4vw, 34px)/1.1 var(--titre); color: #FFFFFF; text-decoration: none; overflow-wrap: anywhere; }
 .contacts a:hover { color: var(--orange); }
 
+/* Tarifs */
+.tableau-prix { overflow-x: auto; border: 2px solid var(--filet); border-radius: 18px; background: var(--carte); }
+.tableau-prix table { width: 100%; border-collapse: collapse; font-size: 17px; }
+.tableau-prix th { text-align: left; font: 500 11px/1.4 var(--mono); letter-spacing: .24em; text-transform: uppercase; color: var(--gris); padding: 16px 20px; border-bottom: 2px solid var(--filet); }
+.tableau-prix td { padding: 16px 20px; border-bottom: 1px solid var(--filet-doux); vertical-align: top; color: var(--gris); }
+.tableau-prix td b { color: var(--encre); }
+.tableau-prix tr:last-child td { border-bottom: 0; }
+.col-prix { text-align: right; white-space: nowrap; }
+.prix { display: block; }
+.prix + .prix { margin-top: 6px; }
+.prix b { font: 900 22px/1.1 var(--titre); color: var(--encre); }
+.fc { display: block; font: 500 11px/1.4 var(--mono); letter-spacing: .12em; color: var(--gris-clair); }
+.grille-packs { display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); margin-top: 24px; }
+.pack { background: var(--carte); border: 2px solid var(--filet); border-radius: 18px; padding: 26px; display: flex; flex-direction: column; gap: 10px; }
+.pack h3 { font: 900 26px/1.1 var(--titre); text-transform: uppercase; margin: 0; }
+.pack p { margin: 0; color: var(--gris); font-size: 17px; }
+.pack .pack-prix { margin-top: auto; padding-top: 12px; display: flex; flex-wrap: wrap; align-items: baseline; gap: 4px 12px; }
+.pack-prix b { font: 900 44px/1 var(--titre); color: var(--encre); }
+.pack-prix .fc { flex-basis: 100%; }
+.barre-prix { text-decoration: line-through; color: var(--gris-clair); font-size: 18px; }
+.pack-fort { background: #0B0B0B; border-color: #0B0B0B; }
+.pack-fort h3, .pack-fort .pack-prix b { color: #FFFFFF; }
+.pack-fort p { color: #BDBDBD; }
+.pack-fort .etiquette { color: var(--orange); }
+.offre { display: flex; flex-wrap: wrap; gap: 20px; align-items: center; border: 2px dashed var(--orange); border-radius: 18px; padding: 24px; }
+.offre .chiffre { font-size: 40px; }
+.offre h3 { font: 900 24px/1.1 var(--titre); text-transform: uppercase; margin: 0 0 6px; }
+.offre p { margin: 0; color: var(--gris); max-width: 640px; }
+.offre > div { flex: 1; min-width: 220px; }
+.regles { margin: 24px 0 0; padding-left: 1.2em; color: var(--gris); font-size: 16px; display: grid; gap: 6px; }
+
 /* Page À propos : le fondateur */
 .chapo-page { font-size: 21px; }
 .fondateur { display: grid; gap: 28px; grid-template-columns: 1fr; align-items: center; background: #0B0B0B; color: #FFFFFF; border-radius: 18px; padding: 24px; margin-block: 44px; }
@@ -301,3 +332,4 @@ figure.photo figcaption { font-size: 10px; letter-spacing: .2em; }
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
 
 .page-large + .pied { border-top: 1px solid #2A2A2A; }
+.tableau-prix th.col-prix { text-align: right; }
