@@ -222,6 +222,26 @@ figure.photo figcaption { font-size: 10px; letter-spacing: .2em; }
 .page { max-width: 720px; padding-block: 48px 72px; }
 .page h1 { font: 900 clamp(34px, 6vw, 56px)/1 var(--titre); font-stretch: 112%; text-transform: uppercase; margin: 14px 0 28px; }
 
+/* Page À propos : le fondateur */
+.chapo-page { font-size: 21px; }
+.fondateur { display: grid; gap: 28px; grid-template-columns: 1fr; align-items: center; background: #0B0B0B; color: #FFFFFF; border-radius: 18px; padding: 24px; margin-block: 44px; }
+@media (min-width: 640px) { .fondateur { grid-template-columns: 240px 1fr; padding: 28px; } }
+.fondateur figure { margin: 0; }
+.fondateur img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 14px; border: 3px solid #FFFFFF; }
+.fondateur .etiquette { color: var(--orange); }
+.fondateur h2 { margin: 8px 0 12px; font-size: 40px; color: #FFFFFF; }
+.fondateur p { color: #BDBDBD; margin: 0 0 12px; }
+.fondateur strong { color: #FFFFFF; }
+
+/* Accueil : « Fondé par Simon » */
+.signe { display: flex; gap: 22px; align-items: center; text-decoration: none; border-top: 2px solid var(--filet); padding-block: 26px 56px; }
+.signe img { width: 96px; height: 96px; border-radius: 50%; object-fit: cover; border: 3px solid var(--encre); flex: none; }
+.signe > span { display: flex; flex-direction: column; gap: 6px; min-width: 0; }
+.signe strong { font: 900 22px/1.15 var(--titre); text-transform: uppercase; }
+.signe .lien { font: 500 12px/1 var(--mono); letter-spacing: .28em; text-transform: uppercase; }
+.signe:hover .lien { color: var(--orange); }
+.signe:hover img { border-color: var(--orange); }
+
 /* Pied de page */
 .pied { background: var(--bande); color: var(--bande-encre); }
 .pied .enveloppe { padding-block: 48px 40px; display: grid; gap: 28px; grid-template-columns: 1fr; }

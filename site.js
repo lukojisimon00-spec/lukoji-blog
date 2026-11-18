@@ -49,7 +49,7 @@
   }
 
   /* ---------- Apparitions au défilement ---------- */
-  var cibles = document.querySelectorAll(".section-titre, .carte, .pub, .contenu > *:not(.une-noire), .encart, .partage, .page > *");
+  var cibles = document.querySelectorAll(".section-titre, .carte, .pub, .signe, .fondateur, .contenu > *:not(.une-noire), .encart, .partage, .page > *");
   if (calme || !("IntersectionObserver" in window)) return;
   var obs = new IntersectionObserver(function (entrees) {
     entrees.forEach(function (en) {
