@@ -222,6 +222,12 @@ figure.photo figcaption { font-size: 10px; letter-spacing: .2em; }
 .page { max-width: 720px; padding-block: 48px 72px; }
 .page h1 { font: 900 clamp(34px, 6vw, 56px)/1 var(--titre); font-stretch: 112%; text-transform: uppercase; margin: 14px 0 28px; }
 
+/* Fiche discrète (page parcours) */
+.fiche { border-top: 1px solid var(--filet-doux); margin-top: 40px; padding-top: 16px; }
+.fiche dl { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 200px), 1fr)); gap: 10px 24px; margin: 12px 0 0; }
+.fiche dt { font: 500 10px/1.4 var(--mono); letter-spacing: .24em; text-transform: uppercase; color: var(--gris-clair); }
+.fiche dd { margin: 2px 0 0; font-size: 14px; color: var(--gris); }
+
 /* Page Nos services */
 .services-une .une-contenu { padding-block: 72px 64px; }
 .services-une .titre-une { font-size: clamp(36px, 6vw, 72px); }
