@@ -222,6 +222,36 @@ figure.photo figcaption { font-size: 10px; letter-spacing: .2em; }
 .page { max-width: 720px; padding-block: 48px 72px; }
 .page h1 { font: 900 clamp(34px, 6vw, 56px)/1 var(--titre); font-stretch: 112%; text-transform: uppercase; margin: 14px 0 28px; }
 
+/* Page Nos services */
+.services-une .une-contenu { padding-block: 72px 64px; }
+.services-une .titre-une { font-size: clamp(36px, 6vw, 72px); }
+.actions { display: flex; flex-wrap: wrap; gap: 12px; margin-top: 8px; }
+.une-noire .lire.plein { background: var(--degrade); border-color: transparent; color: #0B0B0B; }
+.bloc { padding-block: 48px 8px; }
+.bloc .section-titre { margin-bottom: 28px; }
+.intro-bloc { max-width: 680px; color: var(--gris); font-size: 19px; margin: 0; }
+.grille-services { display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr)); }
+.service { background: var(--carte); border: 2px solid var(--filet); border-radius: 18px; padding: 24px; display: flex; flex-direction: column; gap: 10px; transition: transform .25s ease; }
+.service:hover { transform: translateY(-3px); }
+.service h3 { font: 900 24px/1.1 var(--titre); text-transform: uppercase; margin: 0; }
+.service h3::after { content: ""; display: block; width: 36px; height: 5px; border-radius: 3px; background: var(--degrade); margin-top: 10px; }
+.service p { margin: 0; color: var(--gris); font-size: 17px; }
+.etapes { list-style: none; padding: 0; margin: 0; display: grid; gap: 20px; grid-template-columns: repeat(auto-fit, minmax(min(100%, 220px), 1fr)); counter-reset: none; }
+.etapes li { border-top: 2px solid var(--filet); padding-top: 16px; }
+.etapes li::marker { content: none; }
+.etapes .num { display: block; font: 900 56px/1 var(--titre); font-stretch: 125%; color: transparent; -webkit-text-stroke: 2px var(--encre); }
+.etapes h3 { font: 900 20px/1.15 var(--titre); text-transform: uppercase; margin: 12px 0 6px; }
+.etapes p { margin: 0; color: var(--gris); font-size: 16px; }
+.realisations { display: grid; gap: 20px; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); margin-top: 24px; }
+.realisations figure { margin: 0; border: 2px solid var(--filet); border-radius: 18px; overflow: hidden; background: #0B0B0B; }
+.realisations img { width: 100%; height: auto; aspect-ratio: 4 / 5; object-fit: cover; transition: transform .6s cubic-bezier(.2,.7,.2,1); }
+.realisations figure:hover img { transform: scale(1.04); }
+.services-contact { margin-top: 56px; }
+.contacts { list-style: none; padding: 0; margin: 8px 0 0; display: grid; gap: 14px; }
+.contacts li { display: flex; flex-direction: column; gap: 4px; }
+.contacts a { font: 900 clamp(22px, 3.4vw, 34px)/1.1 var(--titre); color: #FFFFFF; text-decoration: none; overflow-wrap: anywhere; }
+.contacts a:hover { color: var(--orange); }
+
 /* Page À propos : le fondateur */
 .chapo-page { font-size: 21px; }
 .fondateur { display: grid; gap: 28px; grid-template-columns: 1fr; align-items: center; background: #0B0B0B; color: #FFFFFF; border-radius: 18px; padding: 24px; margin-block: 44px; }
@@ -263,3 +293,5 @@ figure.photo figcaption { font-size: 10px; letter-spacing: .2em; }
 .pied .bas { grid-column: 1 / -1; border-top: 1px solid #2A2A2A; padding-top: 18px; font: 500 11px/1.4 var(--mono); letter-spacing: .2em; color: var(--bande-gris); }
 
 @media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+
+.page-large + .pied { border-top: 1px solid #2A2A2A; }
