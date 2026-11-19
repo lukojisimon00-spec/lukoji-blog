@@ -381,3 +381,8 @@ figure.photo figcaption { font-size: 10px; letter-spacing: .2em; }
 /* ───── Accueil : la commande, en bas de page ───── */
 .accueil-commande { margin-top: 48px; padding: 8px 0 30px; border-top: 2px solid var(--filet); }
 .accueil-commande .bloc:first-of-type { padding-top: 0; }
+
+/* Images dans le corps des articles */
+.figure-article { margin: 30px 0; }
+.figure-article img { width: 100%; height: auto; border-radius: 14px; border: 2px solid var(--filet); }
+.figure-article figcaption { margin-top: 8px; font: 500 12px/1.5 var(--mono); letter-spacing: .12em; text-transform: uppercase; color: var(--gris); }
